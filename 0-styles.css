@@ -1,0 +1,61 @@
+/* 0-styles.css */
+:root{
+    --bg-color: #FFFFFF;
+    --bg-item-color: #F7F7F7;
+    --bd-color: #8D8D8D;
+
+    --border-stat : 3px solid var(--bd-color);
+
+    --text-size: 2.5rem;
+    --text-weight: 700;
+
+}
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+li {
+    padding: 4%;
+    background-color: var(--bg-item-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    border: var(--border-stat);
+    font-size: var(--text-size);
+    font-weight: var(--text-weight);
+}
+
+.icon {
+    width: 300px;
+    height: 450px;
+    background-image: url('0-sprite.png');
+    background-repeat: no-repeat;
+}
+
+.i-html {
+    background-position: -1% 45%;
+}
+
+.i-css {
+    background-position: 50% 45%;
+}
+
+.i-js {
+    background-position: 102% 45%;
+}
