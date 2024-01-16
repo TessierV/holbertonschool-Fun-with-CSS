@@ -1,15 +1,16 @@
 /* 0-styles.css */
-:root{
+:root {
     --bg-color: #FFFFFF;
     --bg-item-color: #F7F7F7;
     --bd-color: #8D8D8D;
 
-    --border-stat : 3px solid var(--bd-color);
+    --border-stat: 3px solid var(--bd-color);
 
     --text-size: 2.5rem;
     --text-weight: 700;
 
 }
+
 body {
     background-color: var(--bg-color);
     margin: 0;

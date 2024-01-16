@@ -1,114 +1,112 @@
+:root {
+  --color1: #D20039;
+  --color2: #EBEBEB;
+  --color3: #CACCD0;
+  --color4: #fff;
 
-:root{
-    --color1: #D20039;
-    --color2: #EBEBEB;
-    --color3: #CACCD0;
-    --color4: #fff;
+  --color-toogle: var(--color4);
+  --border: 2px solid var(--color3);
 
-    --color-toogle: var(--color4);
-    --border: 2px solid var(--color3);
+  --bg-uncheck-toogle: var(--color2);
+  --color-uncheck-toogle: var(--color3);
 
-    --bg-uncheck-toogle: var(--color2);
-    --color-uncheck-toogle: var(--color3);
-
-    --bg-check-toogle: var(--color1);
-    --color-check-toogle: var(--color4);
+  --bg-check-toogle: var(--color1);
+  --color-check-toogle: var(--color4);
 
 }
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 600;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
 
-  body{
-    padding: 1rem;
-    line-height: 2;
+body {
+  padding: 1rem;
+  line-height: 2;
 
-  }
+}
 
-  .toggle {
-    position: relative;
-    width: 85px;
-    height: 30px;
-  }
+.toggle {
+  position: relative;
+  width: 85px;
+  height: 30px;
+}
 
-  .toggle-cb {
-    position: absolute;
-    opacity: 0;
-  }
+.toggle-cb {
+  position: absolute;
+  opacity: 0;
+}
 
-  .toggle-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    cursor: pointer;
-    border: var(--border);
-    background-color: var(--bg-uncheck-toogle);
+.toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  cursor: pointer;
+  border: var(--border);
+  background-color: var(--bg-uncheck-toogle);
 
-  }
-
-
-  .toggle-cb:checked + .toggle-label .toggle-inner::before {
-    content: "Yes";
-    text-align: right;
-    width: 50%;
-    height: 100%;
-    color: var(--color-toogle);
-  }
-
-  .toggle-cb:checked + .toggle-label .toggle-inner {
-    position: absolute;
-    background-color: var(--bg-check-toogle);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-  }
-
-  .toggle-inner {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 26px;
-    height: 26px;
-    background-color: var(--color-toogle);
-    border-radius: 50%;
-  }
-
-  .toggle-inner::before {
-    content: "";
-    display: block;
-  }
-
-  .toggle-cb:not(:checked) + .toggle-label .toggle-inner::before {
-    content: "No";
-    color: var(--color-uncheck-toogle);
-    width: 250%;
-    border-radius: 25px;
-    text-align: right;
-    line-height: 1.6;
-  }
-
-  .toggle-switch {
-    position: absolute;
-    top: -6px;
-    left: -10px;
-    width: 40px;
-    height: 40px;
-    background-color: var(--color-toogle);
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-    border: var(--border);
-  }
-
-  .toggle-cb:checked + .toggle-label .toggle-switch {
-    transform: translateX(70px);
-  }
+}
 
 
+.toggle-cb:checked+.toggle-label .toggle-inner::before {
+  content: "Yes";
+  text-align: right;
+  width: 50%;
+  height: 100%;
+  color: var(--color-toogle);
+}
+
+.toggle-cb:checked+.toggle-label .toggle-inner {
+  position: absolute;
+  background-color: var(--bg-check-toogle);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.toggle-inner {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  background-color: var(--color-toogle);
+  border-radius: 50%;
+}
+
+.toggle-inner::before {
+  content: "";
+  display: block;
+}
+
+.toggle-cb:not(:checked)+.toggle-label .toggle-inner::before {
+  content: "No";
+  color: var(--color-uncheck-toogle);
+  width: 250%;
+  border-radius: 25px;
+  text-align: right;
+  line-height: 1.6;
+}
+
+.toggle-switch {
+  position: absolute;
+  top: -6px;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-toogle);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  border: var(--border);
+}
+
+.toggle-cb:checked+.toggle-label .toggle-switch {
+  transform: translateX(70px);
+}

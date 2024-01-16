@@ -1,0 +1,23 @@
+
+:root{
+    --color1: #D20039;
+    --color2: #EBEBEB;
+    --color3: #CACCD0;
+    --color4: #fff;
+
+    --color-toogle: var(--color4);
+    --border: 2px solid var(--color3);
+
+    --bg-uncheck-toogle: var(--color2);
+    --color-uncheck-toogle: var(--color3);
+
+    --bg-check-toogle: var(--color1);
+    --color-check-toogle: var(--color4);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
