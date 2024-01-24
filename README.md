@@ -1,10 +1,9 @@
-<img src="https://github.com/TessierV/holbertonschool-web_front_end/assets/113889290/eda48c4c-ff7a-4d4e-8778-b5ce34179cd5" />
+![image](https://github.com/TessierV/holbertonschool-Fun-with-CSS/assets/113889290/9c8ec5e9-4d0b-46af-aacd-9ec897f3311d)
 
 <br>
 <br>
 
-<p>Sass, or Syntactically Awesome Stylesheets, is a powerful and feature-rich extension of CSS.
-It introduces variables, nested rules, and mixins, providing a more maintainable and modular approach to styling.</p>
+<p>Dive into the whimsical world of web design with "Fun with CSS," guided by Guillaume, CTO at Holberton School. In this amateur-level project, you'll unleash your creativity using only HTML and CSS. No JavaScript required! Explore and implement playful layouts that showcase the artistic possibilities of front-end development. Let your imagination run wild as you create visually engaging web experiences. Embrace the challenge and enjoy the process of crafting fun and vibrant designs with the magic of CSS.</p>
 <br><br>
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
 <p align="left">Mandatory: 4 tasks</p>
